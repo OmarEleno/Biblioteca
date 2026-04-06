@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" th:href="@{/css/login.css}">
+</head>
+<body>
+    <section>
+        <div class="contenedor">
+            <img src="https://culiacan.ambar.tecnm.mx/auth/Logo_TecNM_Horizontal.svg" alt="logo">
+            <h2>SISTEMA DE TUTORIAS</h2>
+            <h2>CULIACÁN</h2>
+            <p>Bienvenido, ingresa tus credenciales para acceder a la plataforma</p>
+            <form action="/tutoradoVersion2.html">
+                <div class="dato">
+                    <label for="numeroControl">Número control</label>
+                    <input type="text" id="numeroControl" placeholder="Número control" required>
+                </div>
+                <div class="dato">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" id="contraseña" placeholder="Contraseña" required>
+                </div>
+                <button type="submit">Iniciar sesión</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,16 @@
+com\omar\demo\dao\ReservacionRepository.class
+com\omar\demo\servicio\EspacioService.class
+com\omar\demo\servicio\ReservacionesService.class
+com\omar\demo\dao\EspacioRepository.class
+com\omar\demo\domain\Reservacion.class
+com\omar\demo\security\UsuarioDetailsService.class
+com\omar\demo\servicio\ReservacionesServiceImplementacion.class
+com\omar\demo\dao\UsuarioRepository.class
+com\omar\demo\web\ConfSeg.class
+com\omar\demo\servicio\UsuarioService.class
+com\omar\demo\domain\Espacio.class
+com\omar\demo\web\ControladorPrincipal.class
+com\omar\demo\servicio\EspacioServiceImplementacion.class
+com\omar\demo\domain\Usuario.class
+com\omar\demo\MiPrimeraAppApplication.class
+com\omar\demo\servicio\UsuarioServiceImplementacion.class
