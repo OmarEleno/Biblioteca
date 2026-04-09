@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros</title>
+    <link rel="stylesheet" href="/Biblioteca Edworld/css/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+            <li><a href="/Biblioteca Edworld/html/index.html">Inicio</a></li>
+            <li><a href="/Biblioteca Edworld/html/libros.html">Libros</a></li>
+            <li><a href="###">Usuarios</a></li>
+            <li><a href="###">Prestamos</a></li>
+        </ul>
+    </nav>
+    </header>
+    <section class="buscador">
+        <form action="###">
+            <input type="search" placeholder="Busca un libro">
+            <input type="submit" value="Buscar">
+        </form>
+    </section>
+    <section class="general">
+        <article class="gestion">
+            <div>
+            <h2>Gestión de Libros</h2>
+            <form action="">
+                <label for="titulo">Titulo:</label>
+                <input type="text" id="titulo">
+                <label for="autor">Autor:</label>
+                <input type="text" id="autor">
+                <label for="genero">Genero:</label>
+                <input type="text" id="genero">
+                <label for="editorial">Editorial:</label>
+                <input type="text" id="editorial">
+                <label for="isbn">ISBN:</label>
+                <input type="text" id="isbn">
+                <label for="descripcion">Descripcion:</label>
+                <input type="text" id="descripcion">
+                <label for="cantidad">Cantidad:</label>
+                <input type="text" id="cantidad">
+                <input type="file" id="cargar">
+                <section class="botones">
+                    <button>Guardar</button>
+                    <button>Nuevo</button>
+                    <button>Limpiar</button>
+                </section>
+            </form>
+            </div>
+        </article>
+        <article class="lista">
+            <h3>Lista de Libros</h3>
+            <!--<div>no se encontraron libros..</div>-->
+            <div class="libro">
+                <div class="portada"> 
+                    <img src="/Biblioteca Edworld/Imagenes/1.jpg" alt="Portada"> 
+                </div>
+                <div class="infoLibro">
+                    <h4>ID: 1 - <span>Cien Años de soledad</span></h4>
+                    <p>Autor: Gabriel García Márquez</p>
+                    <p>Género: Realismo Mágico</p>
+                    <p>Disponibles: 10 de 10</p>
+                </div>
+                <div class="opLibros">
+                    <button>Detalles</button>
+                    <button>Editar</button>
+                    <button>Eliminar</button>
+                </div>
+            </div>
+        </article>
+    </section>
+</body>
+</html>

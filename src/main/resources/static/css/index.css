@@ -1,0 +1,316 @@
+body{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    padding: 10px;
+}
+
+nav{
+    align-self: flex-start;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    background-color: rgb(242, 248, 249);
+    padding: 10px 20px;
+}
+
+nav ul li:hover{
+    background-color: rgb(222, 228, 229);
+}
+
+nav ul li a{
+    text-decoration: none;  
+    color: black;
+    font-weight: bold; 
+}
+
+h1{
+   font-size: 60px;
+}
+
+.cont{
+    width: 40%;
+    padding: 20px;
+    gap: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.cont > div{
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    width: 90%;
+    height: 15vh;
+    color: white;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cont > div section:nth-child(1){
+    font-size: 60px;
+}
+
+.cont > div:nth-child(1){
+    background-color: rgb(64, 163, 255);
+    border: 1px solid darkblue;
+}
+
+.cont > div:nth-child(2){
+    background-color: rgb(80, 200, 80);
+    border: 1px solid darkgreen;
+}
+
+.cont > div:nth-child(3){
+    background-color: rgb(275, 221, 86);
+    border: 1px solid darkred;
+    position: relative;
+    left: 50%;
+}
+
+
+.cont > div:nth-child(1):hover{
+    background-color: rgb(44, 143, 235);
+    border: 1px solid darkblue;
+    cursor: text;
+}
+
+.cont > div:nth-child(2):hover{
+    background-color: rgb(60, 180, 60);
+    border: 1px solid darkgreen;
+    cursor: text;
+}
+
+.cont > div:nth-child(3):hover{
+    background-color: rgb(255, 211, 66);
+    border: 1px solid darkred;
+    position: relative;
+    left: 50%;
+    cursor: text;
+}
+
+/*  L   I   B   R   O   S */
+.buscador{
+    background-color: rgb(222, 222, 222);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.buscador input:first-child{
+    height: 4vh;
+    width: 50%;
+}
+
+.buscador input:last-child{
+    height: 4vh;
+    background-color: rgb(64, 163, 255);
+    padding: 0 30px;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.general{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gestion{
+    width: 100%;
+
+    font-size: 20px;
+    background-color: white;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+
+.gestion div{
+    padding: 20px;
+}
+
+.gestion form{
+    display: flex;
+    flex-direction: column;
+}
+
+.gestion form label{
+    margin-top: 10px;
+}
+
+.gestion form input{
+    height: 3vh;
+}
+
+.gestion form button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: gray;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    font-size: 15px;
+}
+.lista{
+    width: 100%;
+    background-color: white;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+
+    padding: 20px;
+}
+
+.botones{
+    display: flex;  
+    gap: 20px;
+}
+
+.botones button:first-child{
+    background-color: rgb(80, 200, 80);
+}
+
+.botones button:nth-child(2){
+    background-color: rgb(64, 163, 255);
+}
+
+#cargar{
+    width: 100%;
+    margin: 15px 0;
+}
+
+#cargar::file-selector-button{
+    background-color: lightgray;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 20px;
+    margin: 0;
+
+}
+
+
+/*
+    ESPACIOS PARA LIBROS
+*/
+
+.libro{
+    width: 100%;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.portada{
+    width: 12%;
+    padding: 20px;
+}
+
+.portada img{
+    width: 100%;;
+    height: 100%;
+}
+
+.infoLibro{
+    width: 100%;
+    height: 100%;
+
+}
+
+.opLibros{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 20%;
+
+    padding: 20px;
+}
+
+.opLibros button{
+    padding: 15px 10px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: orange;
+}
+
+.opLibros button:first-child{
+    background-color: rgb(64, 163, 255);
+}
+
+.opLibros button:last-child{
+    background-color: red;
+}
+
+@media(max-width: 768px){
+    body{
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .buscador{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .general{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .gestion{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .libro{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 250px;
+    }
+
+    .portada{
+        width: 50%%;
+    }
+
+    .opLibros{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
